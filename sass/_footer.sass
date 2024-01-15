@@ -1,0 +1,85 @@
+.footer
+    &_top
+        padding-top: 46px
+        padding-bottom: 29px
+        background: #212121
+        color: $text-color
+        &_inner
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: baseline
+            +lg-landscape
+                flex-wrap: wrap
+                justify-content: start
+        &_item
+            color: $text-color
+            font-size: $secondary_font_size
+            font-weight: 400
+            line-height: 26px
+            +lg-landscape
+                margin-right: 30px
+            +md-landscape
+                padding: 15px
+            &:first-child
+                max-width: 265px
+            &:nth-child(3)
+                max-width: 238px
+            &:last-child
+                padding-right: 85px
+                align-self: flex-end
+                padding-bottom: 33px
+        &_text
+            font-size: $main_font_size
+            font-weight: 400
+            line-height: 17px
+            margin-top: 31px
+            margin-bottom: 43px
+        &_icons
+            display: flex
+        &_icon
+            width: 21px
+            height: 21px
+            &+&
+                margin-left: 11px
+        &_title
+            font-weight: 700
+            margin-bottom: 40px
+        &_links
+            display: flex
+            flex-direction: column
+        &_link
+            transition: all .2s linear
+            &:hover
+                 color: #e97f15
+
+    &_bottom
+        background: #000
+        &_inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-top: 13px
+            padding-bottom: 13px
+            +md-landscape
+                flex-direction: column
+        &_info
+            display: flex
+        &_copyright
+            color: $text-color
+            font-size: 12px
+            font-weight: 700
+            line-height: 14px
+            +md-landscape
+                margin-bottom: 10px
+            &+&
+                margin-left: 30px
+.icon
+    &_fb
+        background: url("../images/fb.svg")
+    &_twit
+        background: url("../images/twit.svg")
+    &_ytube
+        background: url("../images/ytube.svg")
+    &_smt
+        background: url("../images/someicon.svg")

@@ -1,0 +1,57 @@
+.courses
+    display: flex
+    flex-direction: column
+    padding-top: 2px
+    &_title
+        color: $sm-text_color
+        font-size: 18px
+        font-weight: 700
+        line-height: 18px
+        margin-bottom: 23px
+    &_group
+        display: flex
+        flex-direction: column
+        +lg-landscape
+            flex-direction: row
+            align-items: flex-end
+            flex-wrap: wrap
+    &_name
+        color: $sm-text_color
+        font-size: $main_font_size
+        font-weight: 400
+        line-height: 15px
+        transition: all .3s linear
+        +lg-landscape
+            margin-right: 25px
+        &+&
+            margin-top: 22px
+        &:hover
+            color: #e97f15
+    &_types
+        color: $sm-text_color
+        font-size: 18px
+        font-weight: 700
+        line-height: 19px
+        margin-top: 23px
+        margin-bottom: 28px
+    &_tariff
+        margin-bottom: 34px
+        display: flex
+        +xs-landscape
+            margin-bottom: 5px
+
+.tariff_type
+    display: inline-block
+    color: $sm-text_color
+    font-size: 11px
+    font-weight: 400
+    padding: 15px 8px 14px 12px
+    border-radius: 50%
+    border: 1px solid $sm-text_color
+    line-height: 11.602px
+    transition: all .3s linear 
+    &+&
+        margin-left: 11px
+    &:hover
+        background: #5C5C5C
+        color: $text-color

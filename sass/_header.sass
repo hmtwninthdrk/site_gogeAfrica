@@ -1,0 +1,86 @@
+.header
+    font-family: 'Roboto', sans-serif
+
+.header_inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    padding: 29px 0
+    +md-landscape
+        display: block
+
+.logo
+    margin-right: 20px
+
+.nav
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    +md-landscape
+        display: block
+    &_links
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        margin-right: 24px
+        margin-top: 11px
+        +md-landscape
+            flex-direction: column
+            align-items: start
+        .active
+            font-weight: 700
+    &_link
+        font-size: $secondary_font_size
+        font-weight: 400
+        line-height: 17px
+        background: $main_gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        position: relative
+        padding-bottom: 8px
+        +md-landscape
+            font-size: 18px
+            margin-top: 25px
+        &:not(:last-child):hover::before
+            content: ""
+            display: inline-block
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            margin: 0 auto
+            width: 22px
+            height: 3px
+            background: $main_gradient
+            border-radius: 5px
+        &+&
+            margin-left: 56px
+            +md-landscape
+                margin-left: 0
+
+    &_btns
+        display: flex
+        +xs-landscape
+            flex-direction: column
+
+.btn
+    color: $text-color
+    display: inline-block
+    text-align: center
+    font-size: $main_font_size
+    font-weight: 700
+    line-height: 56px
+    min-width: 160px
+    height: 56px
+    border-radius: 100px
+    background: $main_gradient
+    box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.20)
+    +xs-landscape
+        margin-top: 25px
+    &+&
+        margin-left: 10px
+        +xs-landscape
+            margin-left: 0
+    &:hover
+        background: $gradient_hover
